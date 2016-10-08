@@ -6,7 +6,7 @@
 int main()
 {
     //
-	//controllo debug prima del main junk e no exit (forse "goto" spam?) chiamta dei controlli dbg con  goto annidato 
+	//controllo debug prima del main junk e no exit (forse "goto" spam?) chiamta dei controlli dbg con  goto annidato !!!!! non fare un unica funzione
 	//
 
 
@@ -47,6 +47,43 @@ int main()
 		exit;
 	}
 
+	
+
+
+
+	BOOL controllo1 = FALSE;
+	HANDLE finestra = NULL;
+	wchar_t *WindowClassNameIDA = L"Qt5QWindowIcon";	// IDA Pro funziona anche per x32/54dbg
+	wchar_t *WindowClassNameOlly = L"OLLYDBG";			// OllyDbg
+	wchar_t *WindowClassNameImmunity = L"ID";			// Immunity Debugger
+ 
+														
+														//controllo IDA xdbg32/64
+	finestra = FindWindow(WindowClassNameIDA, 0);
+	if (finestra)
+	{
+		controllo1 = TRUE;
+	}
+
+	// fcontrollo  OllyDBG
+	finestra = FindWindow(WindowClassNameOlly, 0);
+	if (finestra)
+	{
+		controllo1 = TRUE;
+	}
+
+	// controllo  Immunity
+	finestra = FindWindow(WindowClassNameImmunity, 0);
+	if (finestra)
+	{
+		controllo1 = TRUE;
+	}
+
+	if (controllo1)
+	{
+		printf("lololol");
+		exit;
+	}
 
 
 
