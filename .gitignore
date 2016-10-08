@@ -251,3 +251,10 @@ paket-files/
 .idea/
 *.sln.iml
 
+/Skanderbeg/targetver.h
+/Skanderbeg/stdafx.h
+/Skanderbeg/stdafx.c
+/Skanderbeg/Skanderbeg.vcxproj.filters
+/Skanderbeg/Skanderbeg.vcxproj
+/Skanderbeg/Skanderbeg.sln
+/Skanderbeg/ReadMe.txt
