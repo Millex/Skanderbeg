@@ -6,7 +6,7 @@
 int main()
 {
     //
-	//controllo debug prima del main junk e no exit (forse "goto" spam?)
+	//controllo debug prima del main junk e no exit (forse "goto" spam?) chiamta dei controlli dbg con  goto annidato 
 	//
 
 
@@ -35,10 +35,21 @@ int main()
 	*/
 
 
+	HANDLE processo = INVALID_HANDLE_VALUE;
+	BOOL controllo;
+
+	processo = GetCurrentProcess();
+	CheckRemoteDebuggerPresent(processo, &controllo);
+
+	if (controllo)
+	{
+		printf("remoto");
+		exit;
+	}
 
 
 
-	CAZOO DURO
+
 	
 	
 	
