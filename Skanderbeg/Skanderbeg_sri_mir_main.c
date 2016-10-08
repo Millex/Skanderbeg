@@ -5,6 +5,19 @@
 
 int main()
 {
-    return 0;
+    
+	//controllo debug prima del main 
+	if (IsDebuggerPresent())
+	{
+		printf("madafaka");
+		exit;
+	}
+	
+	
+	
+	
+	
+	
+	return 0;
 }
 
