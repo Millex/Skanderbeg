@@ -12,8 +12,10 @@ int main()
 
 	if (IsDebuggerPresent())
 	{
-		printf("madafaka");
+		printf("madafaka\n");
 		exit;
+	} else {
+		printf("...\n")
 	}
     
 	//
