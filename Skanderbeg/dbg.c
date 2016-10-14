@@ -9,7 +9,7 @@ void nonvabene()
 if (IsDebuggerPresent())
 {
 	printf("madafaka");
-	exit;
+	exit (0) ;
 }
 
 //
