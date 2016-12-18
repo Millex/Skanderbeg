@@ -8,4 +8,4 @@ compiler:
 script:
   - mkdir build
   - cd build
-  - gcc Skanderbeg_sri_mir_main.c -o prova
+  - gcc prova.c -o prova
