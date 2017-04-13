@@ -4,6 +4,7 @@ int main ()
 {
 
 printf("sdsad");
-return 0;
+printf ("ssss");
+    return  0;
 
 }
